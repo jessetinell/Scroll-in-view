@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="siv.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+	<style>
+body{margin: 0;font-family: verdana;}
+article{width:980px;margin:auto;}
+section{height: 400px;width: 100%;margin: 8px 0; background-color: #391B3E;}
+section.seen{background-color: red;}
+header{height: 500px;width: 100%;background-color: #391B3E;text-align:center;}
+header h1{margin:0;color:white;r;}
+h2{color:white;text-align: center;margin: 0;}
+@media (max-width: 980px){
+	article{width: 100%;}
+}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>Head</h1<br/><br/><br/><br/><br/><br/><br/>
+	</header>
+	<article>
+
+		<section data-siv="">
+			<h2>one</h2>
+		</section>
+
+		<section data-siv="20">
+			<h2>two</h2>
+		</section>
+
+		<section data-siv="50">
+			<h2>three</h2>
+		</section>
+
+		<section data-siv="70">
+			<h2>four</h2>
+		</section>
+
+		<section data-siv="95">
+			<h2>five</h2>
+		</section>
+
+	</article>
+	<script>
+	window.onload = function(){
+		siv.Go();
+	}
+
+	window.onresize = function(){
+		siv.Calculate();
+	}
+	</script>
+</body>
+</html>
